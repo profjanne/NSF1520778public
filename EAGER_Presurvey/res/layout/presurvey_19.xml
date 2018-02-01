@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:keepScreenOn="true"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <TextView
+        android:id="@+id/TextView0001"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="D. We&apos;ll now ask you to evaluate different neighborhoods on a scale from 1 to 7"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/imagea" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:text="First, overall, how would you rate the neighborhood in this picture as a place for you to live?"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <RelativeLayout
+        		android:id="@+id/RelativeLayout0"
+        		android:layout_width="match_parent"
+        		android:layout_height="wrap_content" >
+
+             		<TextView
+             		    android:id="@+id/textView0"
+             		    android:layout_width="wrap_content"
+             		    android:layout_height="wrap_content"
+             		    android:layout_alignParentLeft="true"
+             		    android:layout_alignParentTop="true"
+             		    android:layout_gravity="left"
+             		    android:layout_weight="0"
+             		    android:text="Very Undesirable"
+             		    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        		<TextView
+        		    android:id="@+id/textView00"
+        		    android:layout_width="wrap_content"
+        		    android:layout_height="wrap_content"
+        		    android:layout_alignParentRight="true"
+        		    android:layout_alignParentTop="true"
+        		    android:layout_weight="0"
+        		    android:text="Very Desirable"
+        		    android:textAppearance="?android:attr/textAppearanceMedium" />
+        		
+        	</RelativeLayout>
+    <RadioGroup
+                android:id="@+id/rGrp2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <RadioButton
+                    android:id="@+id/rb22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+                <RadioButton
+                    android:id="@+id/rb23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+                <RadioButton
+                    android:id="@+id/rb24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="4"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+                <RadioButton
+                    android:id="@+id/rb25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="5"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+                <RadioButton
+                    android:id="@+id/rb26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="6"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+                <RadioButton
+                    android:id="@+id/rb27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="7"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+             </RadioGroup>
+             
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:text="How unsafe or safe would you feel if you were visiting this neighborhood for the first time? Would you feel: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <RelativeLayout
+        		android:id="@+id/RelativeLayout01"
+        		android:layout_width="match_parent"
+        		android:layout_height="wrap_content" >
+
+             		<TextView
+             		    android:id="@+id/textView01"
+             		    android:layout_width="wrap_content"
+             		    android:layout_height="wrap_content"
+             		    android:layout_alignParentLeft="true"
+             		    android:layout_alignParentTop="true"
+             		    android:layout_gravity="left"
+             		    android:layout_weight="0"
+             		    android:text="Very Unsafe"
+             		    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        		<TextView
+        		    android:id="@+id/textView001"
+        		    android:layout_width="wrap_content"
+        		    android:layout_height="wrap_content"
+        		    android:layout_alignParentRight="true"
+        		    android:layout_alignParentTop="true"
+        		    android:layout_weight="0"
+        		    android:text="Very Safe"
+        		    android:textAppearance="?android:attr/textAppearanceMedium" />
+        		
+        	</RelativeLayout>
+    <RadioGroup
+                android:id="@+id/rGrp3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <RadioButton
+                    android:id="@+id/rb32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+                <RadioButton
+                    android:id="@+id/rb33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+                <RadioButton
+                    android:id="@+id/rb34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="4"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+                <RadioButton
+                    android:id="@+id/rb35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="5"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+                <RadioButton
+                    android:id="@+id/rb36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="6"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+                <RadioButton
+                    android:id="@+id/rb37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="7"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+             </RadioGroup>
+    <RelativeLayout
+        		android:id="@+id/RelativeLayout1"
+        		android:layout_width="match_parent"
+        		android:layout_height="wrap_content" >
+             		<Button
+            			android:id="@+id/Button_back"
+            			android:layout_width="@dimen/button_width"
+            			android:layout_height="@dimen/button_height"
+           	 			android:layout_alignParentLeft="true"
+        	    		android:layout_alignParentTop="true"
+            			android:layout_gravity="left"
+            			android:layout_weight="0"
+            			android:onClick="back_button"
+            			android:text="Back" />
+
+        		<Button
+            			android:id="@+id/Button_next"
+            			android:layout_width="@dimen/button_width"
+            			android:layout_height="@dimen/button_height"
+            			android:layout_alignParentRight="true"
+            			android:layout_alignParentTop="true"
+            			android:layout_weight="0"
+            			android:onClick="next_button"
+            			android:text="Next" />
+        	</RelativeLayout>
+
+</LinearLayout>

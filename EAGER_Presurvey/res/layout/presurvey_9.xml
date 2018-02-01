@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:keepScreenOn="true"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <TextView
+        android:id="@+id/textView0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginBottom="10dp"
+        android:text="Next I am going to read you three more statements.  For each one, please tell me if it is very likely, likely, unsure, unlikely or very unlikely that people in your neighborhood would do the following (very likely, likely, unsure, unlikely or very unlikely are the response categories for questions 29-32). "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="29. If a group of neighborhood children were skipping school and hanging out on a street corner, how likely is it that your neighbors would do something about it? "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <RadioGroup
+                android:id="@+id/rGrp1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text=" Very Likely "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <RadioButton
+                    android:id="@+id/rb12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="   Likely    "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+                <RadioButton
+                    android:id="@+id/rb13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="   Unsure    "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+                <RadioButton
+                    android:id="@+id/rb14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="  Unlikely   "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <RadioButton
+                    android:id="@+id/rb15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="Very Unlikely"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+             </RadioGroup>
+             
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="30. If there was a fight in front of your house and someone was being beaten or threatened, how likely is it that your neighbors would break it up? "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <RadioGroup
+                android:id="@+id/rGrp2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text=" Very Likely "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <RadioButton
+                    android:id="@+id/rb22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="   Likely    "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+                <RadioButton
+                    android:id="@+id/rb23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="   Unsure    "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+                <RadioButton
+                    android:id="@+id/rb24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="  Unlikely   "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <RadioButton
+                    android:id="@+id/rb25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="Very Unlikely"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+             </RadioGroup>
+             
+     <TextView
+         android:id="@+id/textView3"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="left"
+         android:text="31. Suppose that because of budget cuts the fire station closest to your home was going to be closed down by the city. How likely is it that neighborhood residents would organize to try to do something to keep the fire station open?"
+         android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <RadioGroup
+                android:id="@+id/rGrp3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text=" Very Likely "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <RadioButton
+                    android:id="@+id/rb32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="   Likely    "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+                <RadioButton
+                    android:id="@+id/rb33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="   Unsure    "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+                <RadioButton
+                    android:id="@+id/rb34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="  Unlikely   "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <RadioButton
+                    android:id="@+id/rb35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="Very Unlikely"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+             </RadioGroup>
+
+             <TextView
+                 android:id="@+id/textView4"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="left"
+                 android:text="32. If a child was showing disrespect to an adult, how likely is it that people in your neighborhood would scold that child?"
+                 android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <RadioGroup
+                android:id="@+id/rGrp4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text=" Very Likely "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <RadioButton
+                    android:id="@+id/rb42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="   Likely    "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+                <RadioButton
+                    android:id="@+id/rb43"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="   Unsure    "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+                <RadioButton
+                    android:id="@+id/rb44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="  Unlikely   "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <RadioButton
+                    android:id="@+id/rb45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="Very Unlikely"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+             </RadioGroup>
+    <RelativeLayout
+        		android:id="@+id/RelativeLayout1"
+        		android:layout_width="match_parent"
+        		android:layout_height="wrap_content" >
+             		<Button
+            			android:id="@+id/Button_back"
+            			android:layout_width="@dimen/button_width"
+            			android:layout_height="@dimen/button_height"
+           	 			android:layout_alignParentLeft="true"
+        	    		android:layout_alignParentTop="true"
+            			android:layout_gravity="left"
+            			android:layout_weight="0"
+            			android:onClick="back_button"
+            			android:text="Back" />
+
+        		<Button
+            			android:id="@+id/Button_next"
+            			android:layout_width="@dimen/button_width"
+            			android:layout_height="@dimen/button_height"
+            			android:layout_alignParentRight="true"
+            			android:layout_alignParentTop="true"
+            			android:layout_weight="0"
+            			android:onClick="next_button"
+            			android:text="Next" />
+        	</RelativeLayout>
+
+</LinearLayout>

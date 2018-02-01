@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.eager_study"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="21" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/> 
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.VIBRATE"/>
+	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <service
+     		android:name="com.example.eager_study.iat_trigger_1"
+     		android:enabled="true"
+     		android:process="system"
+     	/>
+        <service
+     		android:name="com.example.eager_study.iat_trigger_2"
+     		android:enabled="true"
+     		android:process="system"
+     	/>
+         <service
+     		android:name="com.example.eager_study.iat_trigger_2_home"
+     		android:enabled="true"
+     		android:process="system"
+     	/>
+        <service
+     		android:name="com.example.eager_study.GetLocationService"
+     		android:enabled="true"
+     		android:process="system"
+     	/>
+        <service
+     		android:name="com.example.eager_study.NotificationService"
+     		android:enabled="true"
+     		android:process="system"
+     	/>
+        <service
+     		android:name="com.example.eager_study.NotificationService_iat"
+     		android:enabled="true"
+     		android:process="system"
+     	/>
+       <service
+     		android:name="com.example.eager_study_util.UploadService"
+     		android:enabled="true"
+     		android:process="system"
+     	/>
+       <service
+     		android:name="com.example.eager_study_util.SendPacket"
+     		android:enabled="true"
+     		android:process="system"
+     	/>
+        
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.eager_study_UI.IAT_1"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.eager_study.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.eager_study.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.eager_study_UI.IAT_1a"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.eager_study.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.eager_study.MainActivity" />
+        </activity>
+         <activity
+            android:name="com.example.eager_study_UI.IAT_1a2"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.eager_study.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.eager_study.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.eager_study_UI.IAT_1b"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.eager_study.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.eager_study.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.eager_study_UI.IAT_1c"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.eager_study.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.eager_study.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.eager_study_UI.IAT_2"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.eager_study.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.eager_study.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.eager_study_UI.EMA_formal_1"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.eager_study.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.eager_study.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.eager_study_UI.EMA_formal_2"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.eager_study_UI.EMA_formal_1" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.eager_study_UI.EMA_formal_1" />
+        </activity>
+        <activity
+            android:name="com.example.eager_study_UI.EMA_formal_3"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.eager_study_UI.EMA_formal_2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.eager_study_UI.EMA_formal_2" />
+        </activity>
+        <activity
+            android:name="com.example.eager_study_UI.EMA_formal_4"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.eager_study_UI.EMA_formal_3" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.eager_study_UI.EMA_formal_3" />
+        </activity>
+        <activity
+            android:name="com.example.eager_study_UI.EMA_formal_5"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.eager_study_UI.EMA_formal_4" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.eager_study_UI.EMA_formal_4" />
+        </activity>
+        <activity
+            android:name="com.example.eager_study_UI.EMA_formal_6"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.eager_study_UI.EMA_formal_5" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.eager_study_UI.EMA_formal_5" />
+        </activity>
+        <activity
+            android:name="com.example.eager_study_UI.EMA_formal_7"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.eager_study_UI.EMA_formal_6" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.eager_study_UI.EMA_formal_6" />
+        </activity>
+        <activity
+            android:name="com.example.eager_study_UI.EMA_formal_8"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.eager_study_UI.EMA_formal_7" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.eager_study_UI.EMA_formal_7" />
+        </activity>
+        <activity
+            android:name="com.example.eager_study_UI.EMA_formal_9"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.eager_study_UI.EMA_formal_8" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.eager_study_UI.EMA_formal_8" />
+        </activity>
+        <activity
+            android:name="com.example.eager_study_UI.EMA_formal_10"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.eager_study_UI.EMA_formal_9" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.eager_study_UI.EMA_formal_9" />
+        </activity>
+        
+        <activity
+            android:name="com.example.eager_study_UI.EMA_formal_11"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.eager_study_UI.EMA_formal_10" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.eager_study_UI.EMA_formal_10" />
+        </activity>
+        
+        <activity
+            android:name="com.example.eager_study_UI.EMA_formal_12"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.eager_study_UI.EMA_formal_11" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.eager_study_UI.EMA_formal_11" />
+        </activity>
+        
+        <activity
+            android:name="com.example.eager_study_UI.EMA_formal_13"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.eager_study_UI.EMA_formal_12" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.eager_study_UI.EMA_formal_12" />
+        </activity>
+        
+        <activity
+            android:name="com.example.eager_study_UI.EMA_formal_14"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.eager_study_UI.EMA_formal_13" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.eager_study_UI.EMA_formal_13" />
+        </activity>
+        
+        <activity
+            android:name="com.example.eager_study_UI.EMA_formal_15"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.eager_study_UI.EMA_formal_14" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.eager_study_UI.EMA_formal_14" />
+        </activity>
+        
+        <activity
+            android:name="com.example.eager_study_UI.EMA_formal_16"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.eager_study_UI.EMA_formal_15" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.eager_study_UI.EMA_formal_15" />
+        </activity>
+        
+        <activity
+            android:name="com.example.eager_study_UI.EMA_formal_17"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.eager_study_UI.EMA_formal_16" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.eager_study_UI.EMA_formal_16" />
+        </activity>
+        
+        <activity
+            android:name="com.example.eager_study_UI.EMA_formal_18"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.eager_study_UI.EMA_formal_17" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.eager_study_UI.EMA_formal_17" />
+        </activity>
+        
+        <activity
+            android:name="com.example.eager_study_UI.EMA_formal_19"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.eager_study_UI.EMA_formal_18" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.eager_study_UI.EMA_formal_18" />
+        </activity>
+        
+        <activity
+            android:name="com.example.eager_study_UI.EMA_formal_20"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.eager_study_UI.EMA_formal_19" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.eager_study_UI.EMA_formal_19" />
+        </activity>
+        
+        <activity
+            android:name="com.example.eager_study_UI.EMA_formal_21"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.eager_study_UI.EMA_formal_20" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.eager_study_UI.EMA_formal_20" />
+        </activity>
+        
+        <activity
+            android:name="com.example.eager_study_UI.EMA_formal_22"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.eager_study_UI.EMA_formal_21" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.eager_study_UI.EMA_formal_21" />
+        </activity>
+        
+        <activity
+            android:name="com.example.eager_study_UI.EMA_formal_23"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.eager_study_UI.EMA_formal_22" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.eager_study_UI.EMA_formal_22" />
+        </activity>
+        
+        <activity
+            android:name="com.example.eager_study_UI.EMA_formal_24"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.eager_study_UI.EMA_formal_23" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.eager_study_UI.EMA_formal_23" />
+        </activity>
+        
+        <activity
+            android:name="com.example.eager_study_UI.EMA_formal_25"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.eager_study_UI.EMA_formal_24" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.eager_study_UI.EMA_formal_24" />
+        </activity>
+        
+        
+        <activity
+            android:name="com.example.eager_study_UI.Address_1"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.eager_study.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.eager_study.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.eager_study_UI.Address_2"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.eager_study_UI.Address_1" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.eager_study_UI.Address_1" />
+        </activity>
+        <activity
+            android:name="com.example.eager_study_UI.Address_3"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.eager_study_UI.Address_2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.eager_study_UI.Address_2" />
+        </activity>
+        <activity
+            android:name="com.example.eager_study_UI.Address_4"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.eager_study_UI.Address_3" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.eager_study_UI.Address_3" />
+        </activity>
+        <activity
+            android:name="com.example.eager_study_UI.Address_5"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.eager_study_UI.Address_4" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.eager_study_UI.Address_4" />
+        </activity>
+        <activity
+            android:name="com.example.eager_study_UI.Address_6"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.eager_study_UI.Address_5" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.eager_study_UI.Address_5" />
+        </activity>
+        <activity
+            android:name="com.example.eager_study_UI.Address_7"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.eager_study_UI.Address_6" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.eager_study_UI.Address_6" />
+        </activity>
+    </application>
+
+</manifest>

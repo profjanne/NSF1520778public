@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:keepScreenOn="true"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="25. There are people like me in this neighborhood."
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <RadioGroup
+                android:id="@+id/rGrp1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text=" Strongly Agree  "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <RadioButton
+                    android:id="@+id/rb12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="      Agree      "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+                <RadioButton
+                    android:id="@+id/rb13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="Neither agree nor disagree"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+                <RadioButton
+                    android:id="@+id/rb14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="    Disagree     "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <RadioButton
+                    android:id="@+id/rb15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="Strongly Disagree"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+             </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginBottom="10dp"
+        android:text="Now I am going read you some statements about how often you engage in some behaviors in the neighborhood.   As I said before, for these questions, your neighborhood includes both the block or street you live on and the three to four blocks or streets in each direction.  For each statement, please tell me if you would say it happens every day, almost every day, about once a week, about once a month, a few times a year, less than once a year or never happens (these are the response categories for questions 26-28)."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="26. How often do you talk with people in your neighborhood, in person?"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <RadioGroup
+                android:id="@+id/rGrp4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical" >
+                <RadioButton
+                    android:id="@+id/rb47"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/custom_radio_button"
+                    android:text="Every day"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+				<RadioButton
+                    android:id="@+id/rb46"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/custom_radio_button"
+                    android:text="Almost every day"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+				
+				<RadioButton
+				    android:id="@+id/rb45"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:button="@drawable/custom_radio_button"
+				    android:text="About once a week"
+				    android:textAppearance="?android:attr/textAppearanceMedium" />
+				
+				<RadioButton
+				    android:id="@+id/rb44"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:button="@drawable/custom_radio_button"
+				    android:text="About once a month"
+				    android:textAppearance="?android:attr/textAppearanceMedium" />
+				
+				  <RadioButton
+                    android:id="@+id/rb43"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/custom_radio_button"
+                    android:text="A few times a year"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+				  
+				   <RadioButton
+                    android:id="@+id/rb42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/custom_radio_button"
+                    android:text="Less than once a year"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+				   
+                <RadioButton
+                    android:id="@+id/rb41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/custom_radio_button"
+                    android:text="Never happens"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                </RadioGroup>
+                <RelativeLayout
+        		android:id="@+id/RelativeLayout1"
+        		android:layout_width="match_parent"
+        		android:layout_height="wrap_content" >
+             		<Button
+            			android:id="@+id/Button_back"
+            			android:layout_width="@dimen/button_width"
+            			android:layout_height="@dimen/button_height"
+           	 			android:layout_alignParentLeft="true"
+        	    		android:layout_alignParentTop="true"
+            			android:layout_gravity="left"
+            			android:layout_weight="0"
+            			android:onClick="back_button"
+            			android:text="Back" />
+
+        		<Button
+            			android:id="@+id/Button_next"
+            			android:layout_width="@dimen/button_width"
+            			android:layout_height="@dimen/button_height"
+            			android:layout_alignParentRight="true"
+            			android:layout_alignParentTop="true"
+            			android:layout_weight="0"
+            			android:onClick="next_button"
+            			android:text="Next" />
+        	</RelativeLayout>
+
+</LinearLayout>

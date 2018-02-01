@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:keepScreenOn="true"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+             
+			<TextView
+			    android:id="@+id/textView1"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="left"
+			    android:text="Some say that black black leaders have been trying to push too fast. Others feel that they have not pushed fast enough. What do you think? "
+			    android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <RadioGroup
+                android:id="@+id/rGrp1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="             Going too slowly              "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <RadioButton
+                    android:id="@+id/rb12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="Moving at about the right speed"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+                <RadioButton
+                    android:id="@+id/rb13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="         Trying to push too fast       "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+             </RadioGroup>
+             
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="How much of the racial tension that exists in the United States today do you think blacks are responsible for creating?"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <RadioGroup
+                android:id="@+id/rGrp2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="      All of it        "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <RadioButton
+                    android:id="@+id/rb22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="        Most          "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+                <RadioButton
+                    android:id="@+id/rb23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="        Some         "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+                <RadioButton
+                    android:id="@+id/rb24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="Not much at all"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+             </RadioGroup>
+
+                 <TextView
+                     android:id="@+id/textView3"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="left"
+                     android:text="How much discrimination against blacks do you feel there is in the United States today, limiting their chances to get ahead?"
+                     android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <RadioGroup
+                android:id="@+id/rGrp3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="     A lot     "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <RadioButton
+                    android:id="@+id/rb32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="    Some     "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+                <RadioButton
+                    android:id="@+id/rb33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="Just a little"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+                <RadioButton
+                    android:id="@+id/rb34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="None at all"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+             </RadioGroup>
+
+                 <TextView
+                     android:id="@+id/textView4"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="left"
+                     android:text="Generations of slavery and discrimination have created conditions that make it difficult for blacks to work their way out of the lower class."
+                     android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <RadioGroup
+                android:id="@+id/rGrp4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="  Strongly agree "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <RadioButton
+                    android:id="@+id/rb42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="  Somewhat agree "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+                <RadioButton
+                    android:id="@+id/rb43"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="Somewhat disagree"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+                <RadioButton
+                    android:id="@+id/rb44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="Strongly disagree"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+             </RadioGroup>
+
+                              <TextView
+                                  android:id="@+id/textView5"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:layout_gravity="left"
+                                  android:text="Over the past few years, blacks have gotten less than they deserve."
+                                  android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <RadioGroup
+                android:id="@+id/rGrp5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="  Strongly agree "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <RadioButton
+                    android:id="@+id/rb52"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="  Somewhat agree "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+                <RadioButton
+                    android:id="@+id/rb53"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="Somewhat disagree"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+                <RadioButton
+                    android:id="@+id/rb54"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="Strongly disagree"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+             </RadioGroup>
+
+                                          <TextView
+                                              android:id="@+id/textView6"
+                                              android:layout_width="wrap_content"
+                                              android:layout_height="wrap_content"
+                                              android:layout_gravity="left"
+                                              android:text="Over the past few years, blacks have gotten more economically than they deserve."
+                                              android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <RadioGroup
+                android:id="@+id/rGrp6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb61"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="  Strongly agree "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <RadioButton
+                    android:id="@+id/rb62"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="  Somewhat agree "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+                <RadioButton
+                    android:id="@+id/rb63"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="Somewhat disagree"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+                <RadioButton
+                    android:id="@+id/rb64"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/custom_radio_button"
+                    android:gravity="center"
+                    android:text="Strongly disagree"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+             </RadioGroup>
+             <RelativeLayout
+        		android:id="@+id/RelativeLayout1"
+        		android:layout_width="match_parent"
+        		android:layout_height="wrap_content" >
+             		<Button
+            			android:id="@+id/Button_back"
+            			android:layout_width="@dimen/button_width"
+            			android:layout_height="@dimen/button_height"
+           	 			android:layout_alignParentLeft="true"
+        	    		android:layout_alignParentTop="true"
+            			android:layout_gravity="left"
+            			android:layout_weight="0"
+            			android:onClick="back_button"
+            			android:text="Back" />
+
+        		<Button
+            			android:id="@+id/Button_next"
+            			android:layout_width="@dimen/button_width"
+            			android:layout_height="@dimen/button_height"
+            			android:layout_alignParentRight="true"
+            			android:layout_alignParentTop="true"
+            			android:layout_weight="0"
+            			android:onClick="next_button"
+            			android:text="Next" />
+        	</RelativeLayout>
+
+</LinearLayout>
